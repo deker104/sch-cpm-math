@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build && next export",
+    "build": "next build",
     "deploy": "aws --endpoint-url=https://storage.yandexcloud.net s3 sync --delete out/ s3://sch-cpm-math"
   },
   "eslintConfig": {
