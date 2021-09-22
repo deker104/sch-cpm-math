@@ -1,6 +1,6 @@
-import Checkbox from "./Checkbox";
-import Deleted from "./Deleted";
-import TripleCheckbox from "./TripleCheckbox";
+import Checkbox from "../utils/Checkbox";
+import Deleted from "../utils/Deleted";
+import TripleCheckbox from "../utils/TripleCheckbox";
 
 function Student({ name, score, onChange, deleted, onDelete }) {
   function handleDelete({ checked }) {
