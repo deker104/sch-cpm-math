@@ -11,13 +11,11 @@ export async function getServerSideProps({ params: { id } }) {
   }
 
   const board = await getBoard(id);
-
   if (!board) {
     return { notFound: true };
   }
 
   const { boardName, studentsList } = board;
-
   return { props: { boardName, studentsList } };
 }
 
